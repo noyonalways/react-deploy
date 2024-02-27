@@ -1,23 +1,9 @@
-import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/prism";
-import "./App.css";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Home } from "./pages";
 
 function App() {
-  const code = `import React from "react"; 
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx"; 
-import "./index.css";
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-  <App />
-</React.StrictMode>
-`;
-
   return (
     <>
-      <SyntaxHighlighter language="jsx" style={dracula}>
-        {code}
-      </SyntaxHighlighter>
+      <Home />
     </>
   );
 }
